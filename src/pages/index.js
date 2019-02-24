@@ -84,10 +84,22 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
 
+                    <section id="intro">
+                        <header className="major">
+                            <h2>À propos de Léo<br />
+                            Développeur d'applications web.</h2>
+                        </header>
+                        <p>Je suis un jeune Freelance passionné par son job, les sorties en nature, les sports de glisse et le café! <i className="icon fa-coffee"></i> <br/>
+                        De nature optimiste, j'aime relever des défis et faire évoluer les choses en alliant travail et bonne humeur. 
+                        Venez avec vos idées, dicutons-en autour d'un café ou organisons un visio-call, et travaillons ensemble pour réaliser des projets à la hauteur de vos ambitions! 
+                        </p>
+
+                    </section>
+
                     <section id="one">
                         <header className="major">
-                            <h2>Des applications rapides, sécurisées<br />
-                            et adaptées sur tous types supports.</h2>
+                            <h2>Des applications rapides,<br />
+                            sécurisées et adaptées sur tous types supports.</h2>
                         </header>
                         <p>Grâce à des technologies modernes, bénéficiez d'un site web ergonomique aux performances ultra-rapides. 
                         Accessible à tous types d'usagers et sur tous types d'appareils (Smartphone, Tablette, Desktop).
