@@ -127,8 +127,7 @@ class HomeIndex extends React.Component {
                             <div className="8u 12u$(small)">
                                 <form   name="contact" 
                                         method="post" 
-                                        data-netlify="true"
-                                        data-netlify-honeypot="bot-field"
+                                        
                                         netlify
                                 >
                                     <div className="row uniform 50%">
