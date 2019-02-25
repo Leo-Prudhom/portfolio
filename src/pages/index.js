@@ -21,8 +21,8 @@ import full04 from '../assets/images/fulls/04.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Site vitrine agence web', description: 'Vitrine web réalisée en CSS3 et HTML5, 100% responsive.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Site touristique', description: 'Calendrier d\'événements, actualités, système de réservation.'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Weather Finder', description: 'Renvoie les contitions météo en live d\'une ville donnée.'},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Site touristique', description: 'Site touristique avec calendrier d\'événements, actualités, système de réservation.'},
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'Weather Finder', description: 'Réalisée avec l\'API OpenWeatherMap, l\'appli renvoie les contitions météo en live d\'une ville selon son nom et code pays.'},
     { id: '4', src: full04, thumbnail: thumb04, caption: 'Application vélo libre service Rennes', description: 'Grâce aux données data explore, cette application permet d\'avoir des données en temps réél pour trouver une station de vélo à Rennes.'},
     
 ];
@@ -93,7 +93,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>Je suis un jeune développeur web en Freelance passionné par son job, les sorties en nature, les sports de glisse et le café! <i className="icon fa-coffee"></i> <br/>
                         De nature optimiste, j'aime relever des défis et faire évoluer les choses en alliant travail et bonne humeur. 
-                        Venez avec vos idées, dicutons-en autour d'un café ou organisons un visio-call, et travaillons ensemble pour réaliser des projets à la hauteur de vos ambitions! 
+                        Venez avec vos idées, discutons-en autour d'un café ou organisons un visio-call, et travaillons ensemble pour réaliser des projets à la hauteur de vos ambitions! 
                         </p>
 
                     </section>
@@ -111,7 +111,7 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="two">
-                        <h2>Recent Work</h2>
+                        <h2>Quelques travaux</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
                             src,
@@ -123,16 +123,15 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="three">
-                        <h2>Get In Touch</h2>
+                        <h2>Contact</h2>
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
 
                             <form method="POST" action="https://formspree.io/leo.prudh@gmail.com">
                                 <input type="text" name="name" placeholder="Votre nom" style={{width:'50%', margin:'1%'}}/>
                                 <input type="email" name="email" placeholder="Votre email" style={{width:'50%', margin:'1%'}}/>
-                                <textarea name="message" placeholder="Message" style={{width:'70%', margin:'1%'}}></textarea>
+                                <textarea name="message" placeholder="Message" style={{width:'100%', margin:'1%'}}></textarea>
 
                                     <Button color="primary" style={{margin:'1%'}}>Envoyer</Button>
-
                                 
                             </form>
 
