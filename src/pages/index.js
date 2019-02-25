@@ -123,20 +123,26 @@ class HomeIndex extends React.Component {
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
+                        
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form   name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"
-                                >
-                                   
-                                        <input type="text" name="name" id="name" placeholder="Name" />
-                                        <input type="email" name="email" id="email" placeholder="Email" />
-                                        <textarea name="message" id="message" placeholder="Message" rows="4"/>
-                                    
+                            <div className="8u 12u$(small)">
+
+                            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                {/* You still need to add the hidden input with the form name to your JSX form */}
+                                <input type="hidden" name="form-name" value="contact" />
+                                
+                                <input type="text" name="name" id="name" placeholder="Name" value={this.state.name} onChange={this.handleInputChange} />
+                                <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleInputChange} />
+                                <textarea name="message" id="message" placeholder="Message" rows="4" value={this.state.text} onChange={this.handleInputChange} />
+                            
 
 
-                                        <button type="submit"> Send </button>
-                                    
-                                </form>
+                                <button type="submit"> Send </button>
+                            </form>
+                                
+                
+            </div>
                                 
                             </div>
                             <div className="4u 12u$(small)">
