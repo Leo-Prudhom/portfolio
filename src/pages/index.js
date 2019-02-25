@@ -137,7 +137,7 @@ class HomeIndex extends React.Component {
                                     </div>
 
                                     <ul className="actions">
-                                        <li><input type="submit" value="Send Message" /></li>
+                                        <li><button type="submit"> Send </button></li>
                                     </ul>
                                 </form>
                                 
