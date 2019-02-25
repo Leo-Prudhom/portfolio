@@ -125,10 +125,7 @@ class HomeIndex extends React.Component {
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form   name="contact" 
-                                        method="post" 
-                                        
-                                        netlify
+                                <form   name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"
                                 >
                                    
                                         <input type="text" name="name" id="name" placeholder="Name" />
