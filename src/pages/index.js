@@ -5,7 +5,8 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from "reactstrap"
+
+import FormContact from "../components/FormContact"
 
 import thumb01 from '../assets/images/thumbs/01.png'
 import thumb02 from '../assets/images/thumbs/02.png'
@@ -126,14 +127,7 @@ class HomeIndex extends React.Component {
                         <h2>Contact</h2>
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
 
-                            <form method="POST" action="https://formspree.io/leo.prudh@gmail.com">
-                                <input type="text" name="name" placeholder="Votre nom" style={{width:'50%', margin:'1%'}}/>
-                                <input type="email" name="email" placeholder="Votre email" style={{width:'50%', margin:'1%'}}/>
-                                <textarea name="message" placeholder="Message" style={{width:'100%', margin:'1%'}}></textarea>
-
-                                    <Button color="primary" style={{margin:'1%'}}>Envoyer</Button>
-                                
-                            </form>
+                            <FormContact />
 
                     </section>
 
