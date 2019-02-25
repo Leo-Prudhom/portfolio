@@ -124,15 +124,17 @@ class HomeIndex extends React.Component {
                         <h2>Get In Touch</h2>
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
                         <div className="row">
-                        <form name="comments" method="POST" netlify-honeypot="hpfield" netlify>
-                            <div class="hpot">
-                            <label>Leave this field empty: <input name="hpfield"/></label>
+                            <div className="8u 12u$(small)">
+                            <form method="POST" action="https://formspree.io/leo.prudh@gmail.com">
+                                <input type="text" name="name" placeholder="Votre nom"/>
+                                <input type="email" name="email" placeholder="Votre email"/>
+                                <textarea name="message" placeholder="Message"></textarea>
+                                <button type="submit">Envoyer</button>
+                            </form>
+                                <ul className="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
                             </div>
-                            <label>Comments:
-                            <textarea name="comments"></textarea>
-                            <button>SEND</button>
-                            </label>
-                        </form>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
