@@ -123,26 +123,15 @@ class HomeIndex extends React.Component {
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
-                        
                         <div className="row">
-                            <div className="8u 12u$(small)">
-                            <div className="8u 12u$(small)">
-
-                            <form 
-                                name="contact-form"
-                                method="post"
-                                data-netlify="true"
-                                data-netlify-honeypot="bot-field"
-                                >
-                                          
-                                <input name="name" type="text" placeholder="name"/>
-                                <button > Send </button>
-                            </form>
-                                
-                
-            </div>
-                                
+                        <form name="comments" method="POST" netlify-honeypot="hpfield" netlify>
+                            <div class="hpot">
+                            <label>Leave this field empty: <input name="hpfield"/></label>
                             </div>
+                            <label>Comments:
+                            <textarea name="comments"></textarea>
+                            </label>
+                        </form>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
