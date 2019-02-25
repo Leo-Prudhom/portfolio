@@ -135,7 +135,7 @@ class HomeIndex extends React.Component {
                                 data-netlify-honeypot="bot-field"
                                 >
                                           
-                                <input name="name" type="text"/>
+                                <input name="name" type="text" placeholder="name"/>
                                 <button > Send </button>
                             </form>
                                 
