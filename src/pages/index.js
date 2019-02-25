@@ -130,6 +130,7 @@ class HomeIndex extends React.Component {
                             </div>
                             <label>Comments:
                             <textarea name="comments"></textarea>
+                            <button>SEND</button>
                             </label>
                         </form>
                             <div className="4u 12u$(small)">
