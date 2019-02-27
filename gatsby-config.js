@@ -2,7 +2,11 @@ module.exports = {
   siteMetadata: {
     title: "Léo Prud'hom",
     author: "Léo Prud'hom",
-    description: "Développeur freelance"
+    description: "Léo Prud'hom, développeur web freelance",
+    titleTemplate: "%s · The Real Hero",
+    url: "https://dazzling-feynman-67bbe3.netlify.com/", // No trailing slash allowed!
+    image: "./static/img/LeoPrudSite.png", // Path to your image you placed in the 'static' folder
+    
   },
   plugins: [
     'gatsby-plugin-react-helmet',
