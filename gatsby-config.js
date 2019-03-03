@@ -49,14 +49,7 @@ module.exports = {
             sitemap: null,
             host: null
           }
-        },
-        query: `{
-          site: MyCustomDataSource {
-            siteMetadata {
-              siteUrl
-            }
-          }
-        }`
+        }
       }
     },
     'gatsby-plugin-sass',
