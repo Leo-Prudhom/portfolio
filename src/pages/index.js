@@ -93,7 +93,7 @@ class HomeIndex extends React.Component {
                         <meta name="twitter:title" content={siteTitle} />
                         <meta name="twitter:description" content={siteDescription} />
                         <meta name="twitter:creator" content="@publisher_handle" />
-                        <meta name="twitter:image" content={siteMetaImg}></meta>
+                        <meta name="twitter:image" content="https://www.google.com/search?q=leo+prudhom&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj5q7qNwubgAhVKrxoKHb30A-0Q_AUIDygC&biw=1533&bih=769#imgrc=BLmCm223UNi6TM:"></meta>
 
                         <meta property="og:title" content={siteTitle} />
                         <meta property="og:type" content="article" />
