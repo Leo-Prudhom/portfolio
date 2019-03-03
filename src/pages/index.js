@@ -19,7 +19,6 @@ import full02 from '../assets/images/fulls/02.png'
 import full03 from '../assets/images/fulls/03.png'
 import full04 from '../assets/images/fulls/04.png'
 
-import siteMetaImg from '../assets/images/LeoPrudSite.jpg'
 
 
 const DEFAULT_IMAGES = [
@@ -93,12 +92,12 @@ class HomeIndex extends React.Component {
                         <meta name="twitter:title" content={siteTitle} />
                         <meta name="twitter:description" content={siteDescription} />
                         <meta name="twitter:creator" content="Léo Prud'hom" />
-                        <meta name="twitter:image" content={siteMetaImg}></meta>
+                        <meta name="twitter:image" content="https://www.google.com/search?q=leo+prudhom&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiv77rAw-bgAhVNA2MBHaULB0wQ_AUIDygC&biw=1533&bih=769#imgrc=1iM2jIEvhJXkFM:"></meta>
 
                         <meta property="og:title" content={siteTitle} />
                         <meta property="og:type" content="article" />
                         <meta property="og:url" content="https://www.leo-prudhom.com/" />
-                        <meta property="og:image" content={siteMetaImg} />
+                        <meta property="og:image" content="https://www.google.com/search?q=leo+prudhom&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiv77rAw-bgAhVNA2MBHaULB0wQ_AUIDygC&biw=1533&bih=769#imgrc=1iM2jIEvhJXkFM:" />
                         <meta property="og:description" content={siteDescription} /> 
                         <meta property="og:site_name" content={siteTitle} />
                         <meta property="fb:admins" content="Facebook numeric ID" />
