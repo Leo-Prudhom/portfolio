@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://www.leo-prudhom.com',
+  URL: NETLIFY_SITE_URL = '',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV
 } = process.env;
@@ -9,11 +9,13 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
+
+    siteUrl,
     title: "Léo Prud'hom",
     author: "Léo Prud'hom",
     description: "Léo Prud'hom, développeur web freelance",
     titleTemplate: "%s · The Real Hero",
-    url: "https://dazzling-feynman-67bbe3.netlify.com/", // No trailing slash allowed!
+    url: "https://www.leo-prudhom.com", // No trailing slash allowed!
     image: "./static/img/LeoPrudSite.png", // Path to your image you placed in the 'static' folder
     
   },
