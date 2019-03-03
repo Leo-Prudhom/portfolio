@@ -84,6 +84,7 @@ class HomeIndex extends React.Component {
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
                         <link rel="canonical" href="https://www.leo-prudhom.com/" />
+                        <html lang="fr" />
                 </Helmet>
 
                 <div id="main">
