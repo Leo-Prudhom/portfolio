@@ -89,10 +89,10 @@ class HomeIndex extends React.Component {
                         <html lang="fr" />
 
                         <meta name="twitter:card" content="Léo Prud'hom - Développeur Freelance" />
-                        <meta name="twitter:site" content="https://www.leo-prudhom.com/" />
+                        <meta name="twitter:site" content="@publisher_handle" />
                         <meta name="twitter:title" content={siteTitle} />
                         <meta name="twitter:description" content={siteDescription} />
-                        <meta name="twitter:creator" content="Léo Prud'hom" />
+                        <meta name="twitter:creator" content="@publisher_handle" />
                         <meta name="twitter:image" content={siteMetaImg}></meta>
 
                         <meta property="og:title" content={siteTitle} />
