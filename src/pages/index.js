@@ -85,6 +85,12 @@ class HomeIndex extends React.Component {
                         <meta name="description" content={siteDescription} />
                         <link rel="canonical" href="https://www.leo-prudhom.com/" />
                         <html lang="fr" />
+                        <meta name="twitter:card" content="summary" />
+                        <meta name="twitter:site" content="@publisher_handle" />
+                        <meta name="twitter:title" content="Page Title" />
+                        <meta name="twitter:description" content="Page description less than 200 characters" />
+                        <meta name="twitter:creator" content="@author_handle" />
+                        <meta name="twitter:image" content="../public/static/img/LeoPrudSite"></meta>
                 </Helmet>
 
                 <div id="main">
