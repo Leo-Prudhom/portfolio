@@ -97,7 +97,7 @@ class HomeIndex extends React.Component {
                         <meta property="og:title" content={siteTitle} />
                         <meta property="og:type" content="article" />
                         <meta property="og:url" content="https://www.leo-prudhom.com/" />
-                        <meta property="og:image" content="https://www.google.com/search?q=leo+prudhom&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiv77rAw-bgAhVNA2MBHaULB0wQ_AUIDygC&biw=1533&bih=769#imgrc=1iM2jIEvhJXkFM:" />
+                        <meta name="image" property="og:image" content="../assets/images/LeoPrudSite.jpg"></meta>
                         <meta property="og:description" content={siteDescription} /> 
                         <meta property="og:site_name" content={siteTitle} />
                         <meta property="fb:admins" content="Facebook numeric ID" />
