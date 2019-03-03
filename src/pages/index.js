@@ -19,7 +19,7 @@ import full02 from '../assets/images/fulls/02.png'
 import full03 from '../assets/images/fulls/03.png'
 import full04 from '../assets/images/fulls/04.png'
 
-import siteMetaImg from '../../public/static/img/LeoPrudSite.png'
+import siteMetaImg from '../assets/LeoPrudSite.png'
 
 
 const DEFAULT_IMAGES = [
