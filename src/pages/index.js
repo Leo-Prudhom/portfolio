@@ -75,7 +75,7 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Léo P - Développeur web"
+        const siteTitle = "Léo Prud'hom - Développeur web"
         const siteDescription = "Bienvenue sur le site de Léo Prud'hom. Développeur web en freenlance, je vous propose de me faire part de vos projets web afin d'y apporter une solution efficace, rapide et fonctionnelle"
 
         return (
@@ -83,53 +83,55 @@ class HomeIndex extends React.Component {
                 <Helmet>
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
+                        <link rel="canonical" href="https://www.leo-prudhom.com/" />
                 </Helmet>
 
                 <div id="main">
 
-                    <section id="intro">
-                        <header className="major">
-                            <h2>À propos de Léo,<br />
-                            Développeur d'applications web.</h2>
-                        </header>
-                        <p>Je suis un jeune développeur web en Freelance passionné par son job, les sorties en nature, les sports de glisse et le café! <i className="icon fa-coffee"></i> <br/>
-                        De nature optimiste, j'aime relever des défis et faire évoluer les choses en alliant travail et bonne humeur. 
-                        Venez avec vos idées, discutons-en autour d'un café ou organisons un visio-call, et travaillons ensemble pour réaliser des projets à la hauteur de vos ambitions! 
-                        </p>
 
-                    </section>
+                        <section id="intro">
+                            <header className="major">
+                                <h2>À propos de Léo,<br />
+                                Développeur d'applications web.</h2>
+                            </header>
+                            <p>Je suis un jeune développeur web en Freelance passionné par son job, les sorties en nature, les sports de glisse et le café! <i className="icon fa-coffee"></i> <br/>
+                            De nature optimiste, j'aime relever des défis et faire évoluer les choses en alliant travail et bonne humeur. 
+                            Venez avec vos idées, discutons-en autour d'un café ou organisons un visio-call, et travaillons ensemble pour réaliser des projets à la hauteur de vos ambitions! 
+                            </p>
 
-                    <section id="one">
-                        <header className="major">
-                            <h2>Des applications rapides,<br />
-                            sécurisées et adaptées sur tous types supports.</h2>
-                        </header>
-                        <p>Grâce à des technologies modernes, bénéficiez d'un site web ergonomique aux performances ultra-rapides. 
-                        Accessible à tous types d'usagers et sur tous types d'appareils (Smartphone, Tablette, Desktop).
-                        Protégez-vous des attaques grâce à des protocoles et moyens de cryptages dans l'ère du temps.
-                        </p>
+                        </section>
 
-                    </section>
+                        <section id="one">
+                            <header className="major">
+                                <h2>Des applications rapides,<br />
+                                sécurisées et adaptées sur tous types supports.</h2>
+                            </header>
+                            <p>Grâce à des technologies modernes, bénéficiez d'un site web ergonomique aux performances ultra-rapides. 
+                            Accessible à tous types d'usagers et sur tous types d'appareils (Smartphone, Tablette, Desktop).
+                            Protégez-vous des attaques grâce à des protocoles et moyens de cryptages dans l'ère du temps.
+                            </p>
 
-                    <section id="two">
-                        <h2>Quelques travaux</h2>
+                        </section>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
-                            src,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
+                        <section id="two">
+                            <h2>Quelques travaux</h2>
 
-                    </section>
+                            <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                                src,
+                                thumbnail,
+                                caption,
+                                description
+                            }))} />
 
-                    <section id="three">
-                        <h2>Contact</h2>
-                        <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
+                        </section>
 
-                            <FormContact />
+                        <section id="three">
+                            <h2>Contact</h2>
+                            <p>Pour tout renseignement, je vous invite à remplir le formulaire ci-dessous et je reviendrai vers vous dans les plus brefs délais.</p>
 
-                    </section>
+                                <FormContact />
+
+                        </section>
 
                 </div>
 
