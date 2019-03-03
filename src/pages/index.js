@@ -19,6 +19,8 @@ import full02 from '../assets/images/fulls/02.png'
 import full03 from '../assets/images/fulls/03.png'
 import full04 from '../assets/images/fulls/04.png'
 
+import siteMetaImg from '../../public/static/img/LeoPrudSite.png'
+
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Site vitrine agence web', description: 'Vitrine web réalisée en CSS3 et HTML5, 100% responsive.'},
@@ -83,14 +85,24 @@ class HomeIndex extends React.Component {
                 <Helmet>
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
-                        <link rel="canonical" href="https://www.leo-prudhom.com/" />
+                        <link rel="canonical" href="" />
                         <html lang="fr" />
-                        <meta name="twitter:card" content="summary" />
-                        <meta name="twitter:site" content="@publisher_handle" />
-                        <meta name="twitter:title" content="Page Title" />
-                        <meta name="twitter:description" content="Page description less than 200 characters" />
-                        <meta name="twitter:creator" content="@author_handle" />
-                        <meta name="twitter:image" content="../public/static/img/LeoPrudSite"></meta>
+
+                        <meta name="twitter:card" content="Léo Prud'hom - Développeur Freelance" />
+                        <meta name="twitter:site" content="https://www.leo-prudhom.com/" />
+                        <meta name="twitter:title" content={siteTitle} />
+                        <meta name="twitter:description" content={siteDescription} />
+                        <meta name="twitter:creator" content="Léo Prud'hom" />
+                        <meta name="twitter:image" content={siteMetaImg}></meta>
+
+                        <meta property="og:title" content={siteTitle} />
+                        <meta property="og:type" content="article" />
+                        <meta property="og:url" content="https://www.leo-prudhom.com/" />
+                        <meta property="og:image" content={siteMetaImg} />
+                        <meta property="og:description" content={siteDescription} /> 
+                        <meta property="og:site_name" content={siteTitle} />
+                        <meta property="fb:admins" content="Facebook numeric ID" />
+
                 </Helmet>
 
                 <div id="main">
