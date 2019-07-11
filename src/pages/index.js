@@ -22,8 +22,8 @@ import full04 from '../assets/images/fulls/04.png'
 
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Site vitrine agence web', description: 'Vitrine web réalisée en CSS3 et HTML5, 100% responsive.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Site touristique', description: 'Site touristique avec calendrier d\'événements, actualités, système de réservation.'},
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Application mobile "Trésors du Morbihan"', description: 'Application mobile de geocaching / carte aux trésors, comprenant de nombreuses fonctionnalités (auth, geolocalisation, quiz, dashboard ...), réalisée avec React-native.'},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Carte isoline', description: 'Déstinée au domaine de la logistique, cette application web à pour intérêt d\'afficher sur une carte, grâce à l\'API hereMap, un tracé qui correspond à une temps de parcours en camion à partir d\'un point donné.'},
     { id: '3', src: full03, thumbnail: thumb03, caption: 'Weather Finder', description: 'Réalisée avec l\'API OpenWeatherMap, l\'appli renvoie les contitions météo en live d\'une ville selon son nom et code pays.'},
     { id: '4', src: full04, thumbnail: thumb04, caption: 'Application vélo libre service Rennes', description: 'Grâce aux données data explore, cette application permet d\'avoir des données en temps réél pour trouver une station de vélo à Rennes.'},
     
@@ -126,7 +126,6 @@ class HomeIndex extends React.Component {
                             </header>
                             <p>Grâce à des technologies modernes, bénéficiez d'un site web ergonomique aux performances ultra-rapides. 
                             Accessible à tous types d'usagers et sur tous types d'appareils (Smartphone, Tablette, Desktop).
-                            Protégez-vous des attaques grâce à des protocoles et moyens de cryptages dans l'ère du temps.
                             </p>
 
                         </section>
